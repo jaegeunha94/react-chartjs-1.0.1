@@ -13,8 +13,14 @@ ChartJS.register(LinearScale, PointElement, Tooltip, Legend);
 
 export const options = {
   scales: {
+    x: {
+        //min: 0,
+        //max: 100,
+    },
     y: {
       beginAtZero: true,
+      //min: 0,
+     // max: 100,
     },
   },
 };
