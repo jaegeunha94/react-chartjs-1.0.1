@@ -26,46 +26,27 @@ export const options = {
 
   // Axis
   x: {
-      // min: 0,
-      // max: 100,
-      // stacked: true,
-  },
-
-  y: {
-      // min: 0,
-      // max: 100,
-      // stacked: true,
-  },
-
-  // Scale
-  scales: {
-    x: {
-      // min: 0,
-      // max: 100,
-      // stacked: true,
+      //min: 0,
+      //max: 100,
+      //stacked: true,
       ticks: {
         // Include a dollar sign in the ticks
         callback: function (value, index, ticks) {
           return this.getLabelForValue(value) + '$';
         },
       },
-    },
   },
+
   y: {
     // Axis
-    // min: 0,
-    // max: 100,
-    // stacked: true,
+    //min: 0,
+    //max: 100,
+    //stacked: true,
     ticks: {
       // Include a dollar sign in the ticks
       callback: function (value, index, ticks) {
         return this.getLabelForValue(value) + '$';
       },
-    },
-
-    // scale
-    grid: {
-      // offset: false,
     },
   },
 };
