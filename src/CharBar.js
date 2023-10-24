@@ -24,132 +24,38 @@ export const options = {
   responsive: true,
   maintainAspectRatio: true,
 
-  plugins: {
-    // Tooltip 옵션
-    tooltip: {
-      usePointStyle: 'star',
-      caretSize: 0,
-      // position: 'nearest',
-      interaction: {
-        //   // 1. point
-        //   // mode: 'point',
-        //   // 2. nearest
-        // mode: 'nearest',
-        //   // 3. index
-        mode: 'index',
-        //   // axis: 'y',
-        //   //4. dataset
-        //   // mode: 'dataset',
-      },
-    },
-    // labels: {
-    //   render: 'value',
-    // },
-    legend: {
-      // position: 'top',
-      position: 'bottom',
-      // display: false,
-    },
-    title: {
-      display: true,
-      text: 'Chart.js Bar Chart',
-    },
-  },
-
   // Axis
   x: {
-    // alignToPixels: true,
-    // backgroundColor: 'red',
-    // border: ???,
-    // display: false,
-    // grid: ???,
-    // reverse: true,
-    // stacked: true,
-    // suggestedMin: 1000,
-    // suggestedMax: 100,
-    // ticks: ???,
-    // weight: 500,
+      // min: 0,
+      // max: 100,
+      // stacked: true,
   },
 
   y: {
-    // alignToPixels: true,
-    // backgroundColor: 'red',
-    // border: ???,
-    // display: false,
-    // grid: ???,
-    // min: 0,
-    // max: 100,
-    // reverse: true,
-    // stacked: true,
-    // suggestedMin: 1000,
-    // suggestedMax: 100,
-    // ticks: ???,
-    // weight: 100,
+      // min: 0,
+      // max: 100,
+      // stacked: true,
   },
 
   // Scale
   scales: {
     x: {
-      // Axis
-      // alignToPixels: true,
-      // backgroundColor: 'red',
-      // border: ???,
-      // display: false,
-      // grid: ???,
       // min: 0,
       // max: 100,
-      // reverse: true,
       // stacked: true,
-      // suggestedMin: 500,
-      // suggestedMax: 100,
-      // ticks: ???,
-      // weight: 100,
-      // min: 0,
-      // max: 100,
-
-      // Labeling Axes
-      // display: false,
-      // align: 'end',
-      // text: '???',
-      // color: 'red',
-      // font: '???',
       ticks: {
         // Include a dollar sign in the ticks
         callback: function (value, index, ticks) {
           return this.getLabelForValue(value) + '$';
         },
       },
-
-      // scale
-      grid: {
-        // offset: false,
-      },
     },
   },
   y: {
     // Axis
-    // alignToPixels: true,
-    // backgroundColor: 'red',
-    // border: ???,
-    // display: false,
-    // grid: ???,
     // min: 0,
     // max: 100,
-    // reverse: true,
     // stacked: true,
-    // suggestedMin: 500,
-    // suggestedMax: 100,
-    // ticks: ???,
-    // weight: 100,
-    // min: 0,
-    // max: 100,
-
-    // Labeling Axes
-    // display: false,
-    // align: 'end',
-    // text: '???',
-    // color: 'red',
-    // font: '???',
     ticks: {
       // Include a dollar sign in the ticks
       callback: function (value, index, ticks) {
