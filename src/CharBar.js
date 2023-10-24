@@ -169,72 +169,24 @@ const data = {
   datasets: [
     {
       data: [2000, 1250, 1750, , 10, 1000, 2250, 2400],
-
-      // 1. general
       label: 'Host 1',
-
-      //3. Styling
       backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      //borderColor: 'rgb(255, 99, 132)',
     },
     {
       data: [200, 125, 170, , 100, 250, 240],
-      
-      backgroundColor: 'blue',
-      borderColor: 'blue',
-      xAxisId: 'x-axis1',
-      yAxisId: 'y-axis1',
-      // skipNull: true,
-
-      // 1. general
       label: 'Host 2',
-      //3. Styling
       backgroundColor: 'blue',
-
     },
     {
-      label: 'Host 3',
+      
       data: [3000, 3250, 3750, 300, 3000, 3250, 3400],
+      label: 'Host 3',
       backgroundColor: 'green',
-      borderColor: 'green',
-      xAxisId: 'x-axis2',
-      yAxisId: 'y-axis2',
-
-      // 1. general
-      // base: 100,
-      // clip: 10000,
-      // grouped: false,
-      // indexAxis: 'y',
-      // order: 2,
-      // skipNull: true,
-      // skipNull: false,
-      // data: [2000, 1250, 1750, , -10, 1000, 2250, 2400],
-      //3. Styling
-      // borderSkipped: 'true',
-      // borderSkipped: 'middle',
-      // borderSkipped: 'bottom',
-      // borderWidth: 5,
-      // borderRadius: 5,
-      // minBarLength: 20,
-      pointStyle: 'crossRot',
-      //4. Intercation
-      // hoverBackgroundColor: 'blue',
-      // hoverBorderColor: 'blue',
-      // hoverBorderWidth: 1,
-      // hoverBorderRadius: 5,
-      //5. ETC
-      // barThickness: 48,
-      // barPercentage: 1,
-      // categoryPercentage: 1,
-      // maxBarThickness: 1,
     },
     {
       label: 'Host 4',
       data: [1000, 1250, 1750, 100, 2000, 2250, 400],
       backgroundColor: 'orange',
-      borderColor: 'orange',
-      xAxisId: 'x-axis2',
-      yAxisId: 'y-axis2',
     },
   ],
 };
