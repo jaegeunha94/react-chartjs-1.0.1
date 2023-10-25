@@ -6,6 +6,7 @@ import BubbleChart from './Bubble';
 import DoughnutChart from './Dogunut';
 import PieChart from './Pie';
 import RadarChart from './Rador';
+import ScatterChart from './Scatter';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <DoughnutChart />
       <PieChart />
       <RadarChart/>
+      <ScatterChart />
     </div>
   );
 }
