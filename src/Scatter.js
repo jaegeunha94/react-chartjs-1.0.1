@@ -13,10 +13,36 @@ import faker from 'faker';
 ChartJS.register(LinearScale, PointElement, LineElement, Tooltip, Legend);
 
 export const options = {
+  // 반응형 옵션
+  responsive: true,
+  maintainAspectRatio: true,
+
   scales: {
-    y: {
-      beginAtZero: true,
-    },
+      x: {
+        //min: 0,
+        //max: 100,
+        //stacked: true,
+        // ticks: {
+        //   // Include a dollar sign in the ticks
+        //   callback: function (value, index, ticks) {
+        //     return this.getLabelForValue(value) + '$';
+        //   },
+        // },
+      },
+
+      y: {
+        // Axis
+        beginAtZero: true,
+        //min: 0,
+        //max: 50
+        //stacked: true,
+        // ticks: {
+        //   // Include a dollar sign in the ticks
+        //   callback: function (value, index, ticks) {
+        //     return this.getLabelForValue(value) + '$';
+        //   },
+        // },
+      },
   },
 };
 
