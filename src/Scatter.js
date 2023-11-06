@@ -49,13 +49,44 @@ export const options = {
 export const data = {
   datasets: [
     {
-      label: 'A dataset',
-      data: Array.from({ length: 100 }, () => ({
-        x: faker.datatype.number({ min: -100, max: 100 }),
-        y: faker.datatype.number({ min: -100, max: 100 }),
-      })),
       backgroundColor: 'rgba(255, 99, 132, 1)',
+      data: [
+        { x: 10, y: 20 },
+        { x: 15, y: 10 },
+        { x: 7, y: 8 },
+        { x: 12, y: 3 },
+        { x: 13, y: 5 },
+        { x: 6, y: 15 },
+        { x: 8, y: 12 },
+      ],
+      label: 'Group A',
     },
+    {
+      backgroundColor: 'rgba(54, 162, 235, 1)',
+      data: [
+        { x: 6, y: 25 },
+        { x: 7, y: 35 },
+        { x: 8, y: 28 },
+        { x: 3, y: 15 },
+        { x: 2, y: 10 },
+        { x: 5, y: 20 },
+        { x: 11, y: 18 },
+      ],
+      label: 'Group B',
+    },
+    {
+      backgroundColor: 'rgba(75, 192, 192, 1)',
+      data: [
+        { x: 16, y: 5 },
+        { x: 2, y: 20 },
+        { x: 9, y: 15 },
+        { x: 10, y: 18 },
+        { x: 12, y: 9 },
+        { x: 20, y: 6 },
+        { x: 3, y: 14 },
+      ],
+      label: 'Group C',
+    }
   ],
 };
 

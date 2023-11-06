@@ -53,30 +53,24 @@ export const options = {
 };
 
 const data = {
-  labels: ['CPU', 'Memory', 'Disk', 'DiskIO', 'Inlet', 'Inside', 'Outlet'],
   datasets: [
-    {
-      data: [2000, 1250, 1750, , 10, 1000, 2250, 2400],
-      label: 'Host 1',
-      backgroundColor: 'rgba(255, 99, 132, 0.5)',
-    },
-    {
-      data: [200, 125, 170, , 100, 250, 240],
-      label: 'Host 2',
-      backgroundColor: 'blue',
-    },
-    {
-      
-      data: [3000, 3250, 3750, 300, 3000, 3250, 3400],
-      label: 'Host 3',
-      backgroundColor: 'green',
-    },
-    {
-      label: 'Host 4',
-      data: [1000, 1250, 1750, 100, 2000, 2250, 400],
-      backgroundColor: 'orange',
-    },
+      {
+          backgroundColor: "rgba(255,99,132,0.2)",
+          data: [65, 59, 80, 81, 56, 55, 40],
+          label: 'Dataset 1'
+      },
+      {
+          backgroundColor: "rgba(54, 162, 235, 0.2)",
+          data: [28, 48, 40, 19, 86, 27, 90],
+          label: 'Dataset 2'
+      },
+      {
+          backgroundColor: "rgba(75, 192, 192, 0.2)",
+          data: [18, 48, 77, 9, 100, 27, 40],
+          label: 'Dataset 3'
+      }
   ],
+  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July']
 };
 
 export default function CharBar() {

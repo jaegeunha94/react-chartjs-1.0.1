@@ -25,27 +25,39 @@ export const options = {
   },
 };
 
-export const data = {
+const data = {
   datasets: [
-    {
-      label: 'Red dataset',
-      data: Array.from({ length: 50 }, () => ({
-        x: faker.datatype.number({ min: -100, max: 100 }),
-        y: faker.datatype.number({ min: -100, max: 100 }),
-        r: faker.datatype.number({ min: 5, max: 20 }),
-      })),
-      backgroundColor: 'rgba(255, 99, 132, 0.5)',
-    },
-    {
-      label: 'Blue dataset',
-      data: Array.from({ length: 50 }, () => ({
-        x: faker.datatype.number({ min: -100, max: 100 }),
-        y: faker.datatype.number({ min: -100, max: 100 }),
-        r: faker.datatype.number({ min: 5, max: 20 }),
-      })),
-      backgroundColor: 'rgba(53, 162, 235, 0.5)',
-    },
-  ],
+      {
+          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+          data: [
+              { x: 20, y: 30, r: 15 },
+              { x: 40, y: 10, r: 10 },
+              { x: 25, y: 25, r: 8 },
+              { x: 10, y: 10, r: 5 },
+          ],
+          label: 'Dataset 1'
+      },
+      {
+          backgroundColor: 'rgba(54, 162, 235, 0.2)',
+          data: [
+              { x: 15, y: 25, r: 7 },
+              { x: 30, y: 5, r: 14 },
+              { x: 45, y: 20, r: 10 },
+              { x: 20, y: 35, r: 18 },
+          ],
+          label: 'Dataset 2'
+      },
+      {
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          data: [
+              { x: 30, y: 40, r: 12 },
+              { x: 25, y: 10, r: 9 },
+              { x: 35, y: 30, r: 16 },
+              { x: 40, y: 45, r: 5 },
+          ],
+          label: 'Dataset 3'
+      }
+  ]
 };
 
 export default function BubbleChart() {
