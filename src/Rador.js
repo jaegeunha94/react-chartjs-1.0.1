@@ -38,22 +38,22 @@ export const options = {
 export const data = {
   datasets: [
     {
-      backgroundColor: 'rgba(255, 99, 132, 0.2)', // pink color with some transparency
-      data: [65, 59, 90, 81, 56, 55, 40], // example data points for this dataset
-      label: 'Data for 2020' // a label for this dataset
+      backgroundColor: 'rgba(255, 99, 132, 0.2)', 
+      data: [65, 59, 90, 81, 56, 55, 40], 
+      label: 'Data for 2020' 
     },
     {
-      backgroundColor: 'rgba(54, 162, 235, 0.2)', // blue color with some transparency
-      data: [28, 48, 40, 19, 96, 27, 100], // another set of data points
-      label: 'Data for 2021' // a label for this second dataset
+      backgroundColor: 'rgba(54, 162, 235, 0.2)', 
+      data: [28, 48, 40, 19, 96, 27, 100], 
+      label: 'Data for 2021' 
     },
     {
-      backgroundColor: 'rgba(75, 192, 192, 0.2)', // greenish color with some transparency
-      data: [35, 100, 51, 50, 20, 70, 80], // third set of data points
-      label: 'Data for 2022' // label for the third dataset
+      backgroundColor: 'rgba(75, 192, 192, 0.2)', 
+      data: [35, 100, 51, 50, 20, 70, 80], 
+      label: 'Data for 2022' 
     }
   ],
-  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'] // common labels for all datasets
+  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'] 
 };
 
 export default function RadarChart() {
