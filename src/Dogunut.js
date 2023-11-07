@@ -4,6 +4,11 @@ import { Doughnut } from 'react-chartjs-2';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
+const options = {
+  responsive: true,
+  maintainAspectRatio: true
+};
+
 export const data = {
   datasets: [
     {
@@ -23,5 +28,5 @@ export const data = {
 };
 
 export default function DoughnutChart() {
-  return <Doughnut data={data} />;
+  return <Doughnut data={data} options={options}/>;
 }

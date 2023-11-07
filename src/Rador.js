@@ -19,18 +19,17 @@ ChartJS.register(
   Legend
 );
 
-export const options = {
-  // 반응형 옵션
+const options = {
   responsive: true,
   maintainAspectRatio: true,
 
   scales: {
     r: {
         angleLines: {
-            display: false
+            display: true
         },
-        //min: 0,
-        //max: 100
+        min: 0,
+        max: 100
     }
   }
 };

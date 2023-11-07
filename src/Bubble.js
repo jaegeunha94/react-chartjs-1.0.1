@@ -11,16 +11,19 @@ import faker from 'faker';
 
 ChartJS.register(LinearScale, PointElement, Tooltip, Legend);
 
-export const options = {
+const options = {
+  responsive: true,
+  maintainAspectRatio: true,
+
   scales: {
     x: {
-        //min: 0,
-        //max: 100,
+        min: 0,
+        max: 100,
     },
     y: {
       beginAtZero: true,
-      //min: 0,
-     // max: 100,
+      min: 0,
+      max: 100,
     },
   },
 };
