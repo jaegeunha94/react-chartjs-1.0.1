@@ -70,6 +70,6 @@ const data = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
 };
 
-export function LineGraph() {
+export default function LineChart() {
   return <Line options={options} data={data} />;
 }
