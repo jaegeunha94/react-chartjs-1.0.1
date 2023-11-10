@@ -29,7 +29,12 @@ const options = {
             display: true
         },
         min: 0,
-        max: 100
+        max: 100,
+        ticks: {
+          callback: function (value, index, ticks) {
+            return '$' + this.getLabelForValue(value) + '$';
+          },
+        },
     }
   }
 };
