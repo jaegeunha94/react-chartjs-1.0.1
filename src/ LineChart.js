@@ -32,7 +32,7 @@ const options = {
           max: 100,
           ticks: {
             callback: function (value, index, ticks) {
-              return this.getLabelForValue(value) + '$';
+              return '$' + this.getLabelForValue(value) + '$';
             },
           },
         },

@@ -44,17 +44,17 @@ export const data = {
     {
       backgroundColor: 'rgba(255, 99, 132, 0.2)', 
       data: [65, 59, 90, 81, 56, 55, 40], 
-      label: 'Data for 2020' 
+      label: 'Dataset 1' 
     },
     {
       backgroundColor: 'rgba(54, 162, 235, 0.2)', 
       data: [28, 48, 40, 19, 96, 27, 100], 
-      label: 'Data for 2021' 
+      label: 'Dataset 2' 
     },
     {
       backgroundColor: 'rgba(75, 192, 192, 0.2)', 
       data: [35, 100, 51, 50, 20, 70, 80], 
-      label: 'Data for 2022' 
+      label: 'Dataset 3' 
     }
   ],
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'] 
