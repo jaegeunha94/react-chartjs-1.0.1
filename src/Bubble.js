@@ -19,11 +19,21 @@ const options = {
     x: {
         min: 0,
         max: 100,
+        ticks: {
+          callback: function (value, index, ticks) {
+            return '$' + this.getLabelForValue(value) + '$';
+          },
+        },
     },
     y: {
       beginAtZero: true,
       min: 0,
       max: 100,
+      ticks: {
+        callback: function (value, index, ticks) {
+          return '$' + this.getLabelForValue(value) + '$';
+        },
+      },
     },
   },
 };
