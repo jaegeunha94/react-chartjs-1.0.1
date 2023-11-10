@@ -20,11 +20,11 @@ export const data = {
         'rgba(153, 102, 255, 0.6)',
         'rgba(255, 159, 64, 0.6)'
       ],
-      data: [300, 50, 100, 40, 120, 160],
-      label: "Dataset 1",
+      data: [12, 19, 3, 5, 2, 3],
+      label: 'Dataset 1',
     }
   ],
-  labels: ["January", "February", "March", "April", "May", "June"],
+  labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
 };
 
 export default function PieChart() {
