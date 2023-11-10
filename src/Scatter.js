@@ -21,7 +21,7 @@ const options = {
         max: 100,
         ticks: {
           callback: function (value, index, ticks) {
-            return this.getLabelForValue(value) + '$';
+            return '$' + this.getLabelForValue(value) + '$';
           },
         },
       },
@@ -32,7 +32,7 @@ const options = {
         max: 50,
         ticks: {
            callback: function (value, index, ticks) {
-             return this.getLabelForValue(value) + '$';
+             return '$' + this.getLabelForValue(value) + '$';
            },
         },
       },
@@ -52,7 +52,7 @@ export const data = {
         { x: 6, y: 15 },
         { x: 8, y: 12 },
       ],
-      label: 'Group A',
+      label: 'Dataset 1',
     },
     {
       backgroundColor: 'rgba(54, 162, 235, 1)',
@@ -65,7 +65,7 @@ export const data = {
         { x: 5, y: 20 },
         { x: 11, y: 18 },
       ],
-      label: 'Group B',
+      label: 'Dataset 2',
     },
     {
       backgroundColor: 'rgba(75, 192, 192, 1)',
@@ -78,7 +78,7 @@ export const data = {
         { x: 20, y: 6 },
         { x: 3, y: 14 },
       ],
-      label: 'Group C',
+      label: 'Dataset 3',
     }
   ],
 };
